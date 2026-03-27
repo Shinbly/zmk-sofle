@@ -5,3 +5,4 @@ tools/
 .west/
 .DS_Store
 firmware.zip
+firmware/
