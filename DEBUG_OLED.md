@@ -27,7 +27,12 @@ The I2C OLED doesn't display anything. Possible causes:
 3. Missing initialization
 
 ### Next Steps
-Try different I2C pin combinations:
-- P0.04 (SDA) / P0.05 (SCL)
-- P0.25 (SDA) / P0.24 (SCL)
-- P0.03 (SDA) / P0.02 (SCL)
+Trying different I2C pin combinations:
+- P0.04/P0.05 - FAILED
+- P0.25/P0.24 - CURRENT TEST
+- P0.03/P0.02 - NOT YET TESTED
+
+### Important Info
+- Display may only be on RIGHT side
+- Build compiles but no display output
+- Sound crackling on computer when keyboard turns on (may be related)
