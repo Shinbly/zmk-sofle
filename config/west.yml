@@ -6,9 +6,14 @@ manifest:
       # See:
       # - https://zmk.dev/docs/features/modules
       # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
+    - name: arawasu
+      url-base: https://github.com/Arawasu
     - name: gpeye
       url-base: https://github.com/GPeye
   projects:
+    - name: zmk-nice-oled
+      remote: arawasu
+      revision: main
     - name: hammerbeam-slideshow
       remote: gpeye
       revision: main

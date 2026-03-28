@@ -1,5 +1,7 @@
 ---
 include:
+  - board: eyelash_sofle_left
+    artifact-name: eyelash_sofle_left
   - board: eyelash_sofle_right
   - board: eyelash_sofle_left
     snippet: studio-rpc-usb-uart
