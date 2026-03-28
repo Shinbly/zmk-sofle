@@ -34,7 +34,6 @@
         prechargep = <0x22>;
         segment-remap;
         com-invdir;
-        use-internal-iref;
         ready-time-ms = <10>;
     };
 };
