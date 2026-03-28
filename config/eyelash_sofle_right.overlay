@@ -22,19 +22,19 @@
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
 
-    oled: ssd1306@3d {
+    oled: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
-        reg = <0x3d>;
+        reg = <0x3c>;
         width = <128>;
         height = <64>;
         segment-offset = <2>;
         page-offset = <0>;
         display-offset = <0>;
         multiplex-ratio = <63>;
-        prechargep = <0x22>;
         segment-remap;
         com-invdir;
-        com-sequential;
+        use-internal-iref;
+        ready-time-ms = <10>;
     };
 };
 
