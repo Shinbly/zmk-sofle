@@ -26,13 +26,18 @@ The I2C OLED doesn't display anything. Possible causes:
 2. Wrong I2C address (0x3c vs 0x3d)
 3. Missing initialization
 
-### Next Steps
-Trying different I2C pin combinations:
-- P0.04/P0.05 - FAILED
-- P0.25/P0.24 - CURRENT TEST
-- P0.03/P0.02 - NOT YET TESTED
+### Tried I2C Pin Combinations (ALL FAILED)
+- P0.26/P0.27 - FAILED
+- P0.04/P0.05 - FAILED  
+- P0.25/P0.24 - FAILED
+- P0.03/P0.02 - CURRENT TEST
 
 ### Important Info
-- Display may only be on RIGHT side
+- Display not working on either side
 - Build compiles but no display output
 - Sound crackling on computer when keyboard turns on (may be related)
+
+### Theory
+The "version OLED" from AliExpress may use a different pin assignment
+than the standard Eyelash Sofle firmware. The stock firmware might
+have been QMK-based with different I2C configuration.
