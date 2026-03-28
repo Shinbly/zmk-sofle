@@ -16,6 +16,10 @@
     model = "eyelash_sofle";
     compatible = "eyelashperipherals,eyelash_sofle";
 
+    aliases {
+        oled = &oled_display;
+    };
+
     chosen {
         zephyr,code-partition = &code_partition;
         zephyr,sram = &sram0;
@@ -25,7 +29,7 @@
         zmk,underglow = &led_strip;
         zmk,physical-layout = &eyelash_sofle_layout;
         zmk,backlight = &backlight;
-        zephyr,display = &oled;
+        zephyr,display = &oled_display;
     };
 
     left_encoder: encoder_left {
@@ -257,7 +261,7 @@ nice_view_spi: &spi0 {
     pinctrl-1 = <&i2c0_sleep>;
     pinctrl-names = "default", "sleep";
 
-    oled: ssd1306@3c {
+    oled_display: ssd1306@3c {
         compatible = "solomon,ssd1306fb";
         reg = <0x3c>;
         width = <128>;

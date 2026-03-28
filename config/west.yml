@@ -11,12 +11,23 @@ manifest:
     - name: gpeye
       url-base: https://github.com/GPeye
   projects:
-    - name: zmk-nice-oled
-      remote: arawasu
+    - name: zmk-sofle-eyelash-config
+      url: https://github.com/Arawasu/zmk-sofle-eyelash-config
       revision: main
+
     - name: hammerbeam-slideshow
-      remote: gpeye
+      remote: Arawasu
       revision: main
+
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+
+    - name: zmk-nice-oled
+      remote: Arawasu
+      revision: main
+
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: main
