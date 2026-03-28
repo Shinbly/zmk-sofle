@@ -2,32 +2,17 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
-      # Additional modules containing boards/shields/custom code can be listed here as well.
-      # See:
-      # - https://zmk.dev/docs/features/modules
-      # - https://docs.zephyrproject.org/3.5.0/develop/west/manifest.html#projects
     - name: arawasu
       url-base: https://github.com/Arawasu
     - name: gpeye
       url-base: https://github.com/GPeye
   projects:
-    - name: zmk-sofle-eyelash-config
-      url: https://github.com/Arawasu/zmk-sofle-eyelash-config
-      revision: main
-
-    - name: hammerbeam-slideshow
-      remote: Arawasu
-      revision: main
-
-    - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
-
     - name: zmk-nice-oled
-      remote: Arawasu
+      remote: arawasu
       revision: main
-
+    - name: hammerbeam-slideshow
+      remote: gpeye
+      revision: main
     - name: eyelash_sofle
       url: https://github.com/a741725193/zmk-sofle
       revision: main
