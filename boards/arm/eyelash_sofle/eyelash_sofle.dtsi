@@ -25,7 +25,6 @@
         zmk,underglow = &led_strip;
         zmk,physical-layout = &eyelash_sofle_layout;
         zmk,backlight = &backlight;
-        zephyr,display = &oled;
     };
 
     left_encoder: encoder_left {
@@ -267,5 +266,12 @@ nice_view_spi: &spi0 {
         multiplex-ratio = <63>;
         segment-remap;
         com-invdir;
+        prechargep = <0x22>;
+    };
+};
+
+/ {
+    chosen {
+        zephyr,display = &oled;
     };
 };
