@@ -3,6 +3,7 @@ include:
 - board: eyelash_sofle_left
   artifact-name: eyelash_sofle_left
 - board: eyelash_sofle_right
+  shield: urchin_right nice_view_adapter nice_view_custom #custom shield
   artifact-name: eyelash_sofle_right
 - board: nice_nano_v2
   shield: settings_reset
