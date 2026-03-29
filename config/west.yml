@@ -5,7 +5,11 @@ manifest:
     # nice_oled
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
+      - name: gpeye
+      url-base: https://github.com/GPeye
   projects:
+    - name: hammerbeam-slideshow
+      remote: gpeye
     # nice_oled
     - name: zmk-nice-oled
       remote: mctechnology17
