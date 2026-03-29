@@ -1,10 +1,8 @@
 ---
 include:
 - board: eyelash_sofle_left
-  shield: corne_left nice_oled
   artifact-name: eyelash_sofle_left
 - board: eyelash_sofle_right
-  shield: corne_right nice_oled
   artifact-name: eyelash_sofle_right
 - board: nice_nano_v2
   shield: settings_reset
